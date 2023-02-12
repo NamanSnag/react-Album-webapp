@@ -19,7 +19,9 @@ function App() {
     .then(res => res.json())
     .then(data => setAlbums(data))
     .catch(err => console.log(err));
-    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 500)
   }, []);
 
 

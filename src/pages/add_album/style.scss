@@ -1,4 +1,32 @@
 .newAlbum {
-    margin-top: 100px;
-    color : white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+    flex-direction: column;
+
+    div {
+        background-color: rgba(130, 142, 152, 0.142);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        padding: 40px 60px;
+
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid rgb(254, 249, 249);
+            color: rgb(193, 189, 189);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .btn {
+                border: none;
+                border-radius: 2rem;
+                padding: 4px 10px;
+                background-color: rgba(0, 255, 255, 0.608);
+            }
+        }
+    }
 }

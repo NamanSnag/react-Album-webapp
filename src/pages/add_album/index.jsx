@@ -29,22 +29,28 @@ const NewAlbum = ({ albums, setAlbums }) => {
 
   return (
     <div className='newAlbum'>
-      <h2>Add Album</h2>
+      <div>
+      <h2>➕ Add Album</h2>
       <form onSubmit={handleAddAlbum}>
         <input
           type="text"
+          className='input'
           placeholder="User ID"
-          value={newAlbum && newAlbum.userId || ""}
+          value={(newAlbum.userId) || ""}
           onChange={(e) => setNewAlbum({ ...newAlbum, userId: e.target.value })}
         />
+        <br/>
         <input
           type="text"
+          className='input'
           placeholder="Title"
-          value={newAlbum && newAlbum.title || ""}
+          value={ (newAlbum.title) || ""}
           onChange={(e) => setNewAlbum({ ...newAlbum, title: e.target.value })}
         />
-        <button type="submit">Add</button>
+        <br/>
+        <button className='btn' type="submit">➕ Add</button>
       </form>
+      </div>
     </div>
   )
 }
