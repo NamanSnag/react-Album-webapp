@@ -1,4 +1,93 @@
 .home {
-    margin-top: 100px;
-    color: white;
+    margin-top: 80px;
+
+    .leftSection {
+        position: fixed;
+        top: 80px;
+        width: 26vw;
+        min-width: 200px;
+        height: 100vh;
+        background-color: rgba(193, 225, 251, 0.615);
+        backdrop-filter: blur(4px) ;
+        text-align: center;
+
+        .updateAlbum {
+            margin: 5px 0px;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .deleteAlbum {
+            margin: 10px 0px;
+            padding: 20px;
+        }
+
+        .input {
+            border: none;
+            margin: 10px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            outline: none;
+            width: 80%;
+            background-color: rgba(63, 142, 211, 0.284);
+        }
+
+        .left-title {
+            display: flex;
+            align-items: center;
+            img {
+                height: 36px;
+                margin: 0px 10px;
+            }
+        }
+    }
+
+    .albums {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        margin-left: 34vw;
+
+        table {
+            border: 1px solid black;
+
+            thead tr th {
+                border: 2px solid black;
+                background-color: rgb(43, 43, 44);
+                color: white;
+            }
+
+            tbody tr td {
+                border: 1px solid black;
+                background-color: aliceblue;
+            }
+        }
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    .btn {
+        border: none;
+        padding: 5px 10px;
+        border-radius: 2rem;
+        color: aliceblue;
+        cursor: pointer;
+        background-color: rgb(22, 108, 183);
+    }
+
+    .editBtn {
+        margin: 5px 10px;
+        color: rgb(228, 136, 15);
+        border: none;
+        cursor: pointer;
+    }
+
+    .deleteBtn {
+        margin: 5px 10px;
+        color: red;
+        border: none;
+        cursor: pointer;
+    }
 }

@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul className='navbar-links'>
         {['Home', 'New_Album'].map((item)=>{
           return (<li key={`navLink${item}}`}>
-            <Link to={`/${item}`} style={(active === item) ? {color: 'white'} : null } onClick={()=>handalActive(item)} >
+            <Link to={(item === 'Home') ? '/' :`/${item}`} style={(active === item) ? {color: 'white'} : null } onClick={()=>handalActive(item)} >
               {item}
             </Link>
             <div/>

@@ -4,8 +4,8 @@
     align-items: center;
   
     padding: 0.5rem 2rem;
-    background: rgba(30, 145, 227, 0.25);
-    backdrop-filter: blur(4px);
+    background: rgba(11, 146, 242, 0.196);
+    backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     top: 0;
@@ -16,6 +16,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-left: 30px;
         
         img {
             width: 40px;
